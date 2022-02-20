@@ -1,0 +1,43 @@
+footer {
+    border-top: 0.0625rem solid $dimmed-white-3;
+    padding-top: 1rem;
+    margin-top: 8rem;
+
+    .container {
+        @include align-center;
+    }
+
+    svg {
+        fill: $dimmed-white-1;
+        transition: fill .3s ease;
+
+        &:hover {
+            fill: $dimmed-white;
+        }
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        margin: 0 -0.75rem;
+        padding: 0;
+        column-gap: 1.5rem;
+    }
+
+    .copyright {
+        @include text-small;
+
+        margin: 88px 0 30px;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            vertical-align: middle;
+        }
+
+        span {
+            margin-left: 1rem;
+            color: $dimmed-white-1;
+        }
+    }
+}

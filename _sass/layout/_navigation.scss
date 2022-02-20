@@ -1,0 +1,32 @@
+nav.main {
+    margin-top: 1.5rem;
+    text-align: right;
+
+    ul {
+        list-style: none;
+        display: flex;
+        margin: 0 -0.75rem;
+        justify-content: flex-end;
+        column-gap: 2rem;
+        padding: 0;
+        line-height: 0;
+
+        li {
+            @include text-button;
+
+            a {
+                text-decoration: none;
+                color: $dimmed-white-1;
+                transition:.3s;
+
+                &:hover {
+                    color: $dimmed-white;
+                }
+
+                &.current {
+                    color: $neon-tech-green;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+   <head>
+      {% include title.html %}
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      {% include og.html %}
+      <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
+      <link rel="icon" type="image/svg+xml" href="favicon.svg">
+      <meta name="theme-color" content="#01011f">
+   </head>
+   <body class="page-{{ page.name | downcase | split: "." | first }}">
+      {{ content }}
+   </body>
+</html>

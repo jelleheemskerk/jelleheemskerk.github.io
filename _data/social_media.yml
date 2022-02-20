@@ -1,0 +1,9 @@
+- name: Github
+  link: https://github.com/jelleheemskerk
+  icon: /assets/img/social_media/github.svg
+- name: Twitter
+  link: https://twitter.com/jelleheemskerk
+  icon: /assets/img/social_media/twitter.svg
+- name: LinkedIn
+  link: https://linkedin.com/in/jelleheemskerk
+  icon: /assets/img/social_media/linkedin.svg

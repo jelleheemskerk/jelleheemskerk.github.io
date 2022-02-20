@@ -1,0 +1,17 @@
+body {
+    background-color: $midnight-blue;
+    color: $dimmed-white;
+    @include text-body;
+}
+
+h1 {
+    @include title-large;
+}
+
+h2,h3,h4,h5 {
+    @include title-medium;
+}
+
+a {
+    color: $neon-tech-green;
+}

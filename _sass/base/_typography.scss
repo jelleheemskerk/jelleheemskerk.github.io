@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+%main-font {
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin title-large {
+    @extend %main-font;
+    font: {
+        size: 2.5rem;
+        weight: 700;
+    }
+    line-height: 180%;
+    letter-spacing: -2%;
+}
+
+@mixin title-medium {
+    @include title-large;
+    font-size: 1.5rem;
+}
+
+@mixin title-sub-title {
+    @include title-medium;
+}
+
+@mixin text-body {
+    @extend %main-font;
+    font-size: 1rem;
+    line-height: 140%;
+}
+
+@mixin text-bold {
+    @include text-body;
+    font-weight: 700;
+}
+
+@mixin text-small {
+    @include text-body;
+    font-size: 0.75rem;
+}
+
+@mixin text-button {
+    @extend %main-font;
+    font: {
+        size: 0.75rem;
+        weight: 700;
+    }
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}

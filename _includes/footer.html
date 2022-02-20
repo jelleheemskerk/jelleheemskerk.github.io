@@ -1,0 +1,19 @@
+<footer>
+    <div class="container">
+        <ul class="social-media">
+            {% for item in site.data.social_media %}
+            <li>
+                <a href="{{ item.link }}">
+                    {% include_relative {{ item.icon }} %}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        <div class="copyright">
+            <a href="#">
+                {% include_relative /assets/img/icon.svg %}
+            </a>
+            <span>&copy; 2022 Jelle Heemskerk</span>
+        </div>
+    </div>
+</footer>

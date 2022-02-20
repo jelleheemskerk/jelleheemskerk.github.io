@@ -1,0 +1,13 @@
+@mixin align-center {
+    margin: {
+        left: $horizontal-spacing;
+        right: $horizontal-spacing;
+    }
+    @media (min-width: $break-point) {
+        max-width: $max-content-width;
+        margin: {
+            left: auto;
+            right: auto;
+        }
+    }
+}
