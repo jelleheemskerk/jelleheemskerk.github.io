@@ -1,7 +1,7 @@
 timezone: Europe/Amsterdam
 exclude:
   - README.md
-name: Jelle Heemskerk — Senior Android Engineer
+title: Jelle Heemskerk — Senior Android Engineer
 
 # Front matter defaults
 defaults:

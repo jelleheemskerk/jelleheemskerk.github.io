@@ -1,7 +1,7 @@
-{% if page.title and site.name %}
-<title>{{ page.title | escape }} &sol; {{ site.name | escape }}</title>
+{% if page.title and site.title %}
+<title>{{ page.title | escape }} &sol; {{ site.title | escape }}</title>
 {% elsif page.title %}
 <title>{{ page.title | escape }}</title>
-{% elsif site.name %}
-<title>{{ site.name | escape }}</title>
+{% elsif site.title %}
+<title>{{ site.title | escape }}</title>
 {% endif %}
