@@ -10,13 +10,15 @@
         size: 2.25rem;
         weight: 700;
     }
+    line-height: 160%;
+    letter-spacing: -2%;
+
     @media (min-width: $break-point) {
         font: {
             size: 2.5rem;
         }
+        line-height: 180%;
     }
-    line-height: 180%;
-    letter-spacing: -2%;
 }
 
 @mixin title-medium {
