@@ -7,8 +7,13 @@
 @mixin title-large {
     @extend %main-font;
     font: {
-        size: 2.5rem;
+        size: 2.25rem;
         weight: 700;
+    }
+    @media (min-width: $break-point) {
+        font: {
+            size: 2.5rem;
+        }
     }
     line-height: 180%;
     letter-spacing: -2%;

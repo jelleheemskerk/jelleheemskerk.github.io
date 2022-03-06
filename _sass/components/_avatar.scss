@@ -1,4 +1,14 @@
 .avatar {
     border-radius: 50%;
-    border: 4px solid $paper-white;
+    border: 0.25rem solid $paper-white;
+    content: url('https://www.gravatar.com/avatar/c8ad75eb648acf4187308b2edea46506?s=192');
+    display: inline-block;
+    width: 6rem;
+    height: 6rem;
+
+    @media (min-width: $break-point) {
+        content: url('https://www.gravatar.com/avatar/c8ad75eb648acf4187308b2edea46506?s=320');
+        width: 10rem;
+        height: 10rem;
+    }
 }

@@ -1,7 +1,11 @@
 .page-index header {
     @include align-center;
     text-align: center;
-    margin-bottom: 4.5rem;
+    margin-bottom: 3rem;
+
+    @media (min-width: $break-point) {
+        margin-bottom: 4.5rem;
+    }
 
     svg {
         margin-top: 2.75rem;
@@ -11,4 +15,13 @@
 .page-index main {
     @include align-center;
     text-align: center;
+}
+
+.page-index .logo {
+    width: 8.75rem;
+    height: inherit;
+
+    @media (min-width: $break-point) {
+        width: inherit;
+    }
 }
